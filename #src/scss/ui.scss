@@ -1,0 +1,130 @@
+._arrow {
+	width: 33px;
+	height: 30px;
+	background: url("../img/products/products-slider__arrow.svg") 0 0 no-repeat;
+	cursor: pointer;
+	@media (min-width: 992px) {// hhv snipet
+		&:hover {
+			background: url("../img/products/products-slider__arrow-hover.svg") 0 0 no-repeat;
+		}
+	}
+}
+.arrow__prev {
+	@media (min-width: 992px) {// hhv snipet
+		&:hover {
+			transform: rotate(180deg);
+		}
+	}
+}
+.arrow__next {
+	transform: rotate(180deg);
+	@media (min-width: 992px) {// hhv snipet
+		&:hover {
+			transform: rotate(0deg);
+		}
+	}
+}
+
+//========================================================================================================================
+
+.breadcrumbs {
+	margin: 0 0 20px 0;
+	height: 20px;
+	overflow: auto;
+	/* .breadcrumbs__list */
+	&__list {
+		display: flex;
+		align-items: center;
+		li {
+			font-size: 14px;
+			font-weight: 300;
+			padding: 0 25px 0 0 ;
+			background: url("../img/catalog/arrow-blue.png") right no-repeat;
+			margin: 0 15px 0 0;
+			white-space: nowrap;
+			&:last-child {
+				margin: 0;
+				background: none;
+			}
+		}
+	}
+	/* .breadcrumbs__link */
+	&__link {
+		color: #1ab9ce;
+		text-decoration: underline;
+	}
+	/* .breadcrumbs__item */
+	&__item {
+		/* Style for "Каталог то" */
+		color: #999999;
+		
+	}
+}
+
+//========================================================================================================================
+
+.rub {
+	&:after {
+		content: " ₽";
+		font-size: 18px;
+	}
+}
+
+._swiper {
+	overflow: hidden;
+}
+
+//checkbox заготовка
+// .checkbox {
+// 	position: relative;
+// 	/* .checkbox__input */
+// 	&__input {
+// 		position: absolute;
+// 		width: 0;
+// 		height: 0;
+// 		opacity: 0;
+// 		visibility: hidden;
+// 		&:checked + .checkbox__text:before {
+// 			border: 2px solid #009aaf;
+// 		}
+// 		&:checked + .checkbox__text:after {
+// 			content: "";
+// 			width: 9px;
+// 			height: 9px;
+// 			position: absolute;
+// 			left: 3px;
+// 			top: 3px;
+// 			background-color: #53b5de;
+// 		}
+// 	}
+// 	/* .checkbox__text */
+// 	&__text {
+// 		display: inline-flex;
+// 		align-items: center;
+// 		position: relative;
+// 		font-size: 12px;
+// 		color: #666666;
+// 		font-weight: 300;
+// 		letter-spacing: -0.3px;
+// 		line-height: calc(15 / 12);
+// 		cursor: pointer;
+// 		&:before {
+// 			content: "";
+// 			align-self: flex-start;
+// 			margin: 0 12px 0 0;
+// 			flex: 0 0 15px;
+// 			left: 0;
+// 			top: 0;
+// 			width: 15px;
+// 			height: 15px;
+// 			border: 2px solid #dadada;
+// 		}
+// 	}
+// 	&._error {
+// 		.checkbox__text {
+// 			&:before {
+// 				border: 1px solid #ee1212;
+// 			}
+// 		}
+// 	}
+// }
